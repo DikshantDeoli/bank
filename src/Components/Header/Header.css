@@ -1,0 +1,31 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin-right: 350px;
+}
+.logo > img {
+    margin-left: 1.7rem;
+    width: 155px;
+    height: 135px;
+}
+ .center-header-element > .header-element{
+    padding-left: 3rem ;
+    padding-right: 3rem ;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+ .center-header-element{
+            font-family: 'inter';
+            font-size: 1.4rem;
+            margin-top: 2.6rem;
+            display: flex;
+            width: 553px;
+            color: black;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            height: 35px;
+            /* align-items: center; */
+}
