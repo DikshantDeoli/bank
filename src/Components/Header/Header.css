@@ -3,14 +3,15 @@
     flex-direction: row;
 }
 .logo{
-    margin-right: 350px;
+    margin-right: 230px;
 }
 .logo > img {
-    margin-left: 1.7rem;
-    width: 155px;
+    margin-left: 1.3rem;
+    width: 145px;
     height: 135px;
 }
- .center-header-element > .header-element{
+ .center-header-element > .header-element
+ {
     padding-left: 3rem ;
     padding-right: 3rem ;
     border-left: 2px solid black;
@@ -19,13 +20,31 @@
 
  .center-header-element{
             font-family: 'inter';
-            font-size: 1.4rem;
+            font-size: 1rem;
             margin-top: 2.6rem;
             display: flex;
             width: 553px;
             color: black;
             justify-content: space-evenly;
             flex-wrap: nowrap;
-            height: 35px;
-            /* align-items: center; */
+            height: 30px;
 }
+
+
+ #btnFeature:hover{
+        font-size: 18px;
+        box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+        transition: all 0.3s ease-out;
+}
+ #btnAbout:hover{
+        font-size: 18px;
+        
+        box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+        transition: all 0.3s ease-out;
+ }
+ #btnContact:hover{
+    font-size: 18px;
+    
+    box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+    transition: all 0.3s ease-out;
+ }

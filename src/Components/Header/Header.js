@@ -14,14 +14,16 @@ export default class Header extends Component {
 
                     <div className='center-header-element'>
 
-                        <div>
+                        <div id='btnFeature'>
+
                             Feature
+
                         </div>
 
-                        <div className='header-element'>
+                        <div className='header-element' id='btnAbout'>
                             About
                         </div>
-                        <div>
+                        <div id='btnContact'>
                             Contact
                         </div>
                     </div>

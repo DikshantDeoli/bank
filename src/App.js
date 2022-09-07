@@ -1,9 +1,13 @@
-import Login from './Pages/Login';
+import Login from './Pages/Login/Login';
+import DashBoard from './Pages/DashBoard/DashBoard';
+
 
 function App() {
   return (
     <>
-      <Login />
+      {/* <Login /> */}
+      <DashBoard />
+
     </>
   );
 }
