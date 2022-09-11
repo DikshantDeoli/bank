@@ -39,7 +39,7 @@ export default class DeleteCustomer extends Component {
                         marginTop: '5px'
                     }}>
                         <Typography variant="h5" gutterBottom>
-                            DeleteCustomer
+                            Delete Customer
                         </Typography>
                     </Box>
                     <Box sx={{

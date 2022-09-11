@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-// import Header from '../../Components/Header/Header'
+import { Navigate } from 'react-router-dom'
+import Header from '../../Components/Header/Header'
 import MHeader from '../../Components/Header/MangerHeader/MHeader'
 import NewCustomer from '../../Components/NewCustomer/NewCustomer'
 import SideBar from '../../Components/SideBar/SideBar'
@@ -21,9 +22,16 @@ import Withdraw from '../../Components/Withdraw/Withdraw'
 export default class DashBoard extends Component {
     constructor() {
         super();
+        const LoggedIn = localStorage.getItem("LoggedIn");
+        const role = localStorage.getItem("role");
+
         this.state = {
+
+
             whichViewToShow: "",
-            loader: false
+            loader: false,
+            LoggedIn,
+            role
         };
         this.viewSetter = this.viewSetter.bind(this);
         this.viewGetter = this.viewGetter.bind(this);
@@ -140,15 +148,37 @@ export default class DashBoard extends Component {
 
 
     render() {
+        if (this.state.LoggedIn == null) {
+
+            return <Navigate to="/login" replace={true} />
+        }
         return (
             <>
-                <MHeader />
-                <SideBar
-                    viewSetter={this.viewSetter}
-                />
-                <div className='mainContainer'>
-                    {this.viewGetter(this.state.whichViewToShow)}
-                </div>
+                {
+                    this.state.role === 'manager' ?
+                        <div>
+                            <MHeader />
+                            <SideBar
+                                viewSetter={this.viewSetter}
+                                role={this.state.role}
+                            />
+                            <div className='mainContainer'>
+                                {this.viewGetter(this.state.whichViewToShow)}
+                            </div>
+                        </div>
+                        :
+                        <div>
+                            <Header />
+                            <SideBar
+                                viewSetter={this.viewSetter}
+                                role={this.state.role}
+                            />
+                            <div className='mainContainer'>
+                                {this.viewGetter(this.state.whichViewToShow)}
+                            </div>
+                        </div>
+                }
+
             </>
         )
     }
