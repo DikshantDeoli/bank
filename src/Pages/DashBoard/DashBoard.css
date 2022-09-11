@@ -1,3 +1,11 @@
 /* .dashboardContainer{
     position: fixed;
 } */
+
+.mainContainer
+{
+        left: 286px;
+            position: absolute;
+            width: 1052px;
+            height: 515px;
+}

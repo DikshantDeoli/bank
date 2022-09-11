@@ -6,6 +6,26 @@ import './Login.css'
 
 
 export default class Login extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            email: '',
+            password: ''
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange = (e) => {
+        console.log(this.state.email)
+        console.log(this.state.password)
+        this.setState({
+            email: '',
+            password: ''
+        })
+    }
+
+
     render() {
         return (
             <div className='container'>
@@ -36,20 +56,48 @@ export default class Login extends Component {
                         <div className='text-input'>
                             <div className='text-block'>
                                 <div>
-                                    <input type="email" name='email' placeholder='Email' className='emailInput' required />
+                                    <input
+                                        type="email"
+                                        name='email'
+                                        placeholder='Email'
+                                        className='emailInput'
+                                        value={this.state.email}
+                                        required
+                                        onChange={
+                                            (e) => {
+                                                this.setState({
+                                                    email: e.target.value
+                                                })
+
+                                            }
+                                        }
+                                    />
                                 </div>
                             </div>
                         </div>
                         <div className='text-input'>
                             <div className='text-block'>
                                 <div>
-                                    <input type="password" name='password' placeholder='Password' className='passwordInput' required />
+                                    <input
+                                        type="password"
+                                        name='password'
+                                        placeholder='Password'
+                                        className='passwordInput'
+                                        value={this.state.password}
+                                        required
+                                        onChange={
+                                            (e) => {
+                                                this.setState({
+                                                    password: e.target.value
+                                                })
+                                            }
+                                        } />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='btnLogin'>
-                        <button type='submit' className='btn-hover color-5'>
+                        <button type='submit' className='btn-hover color-5' onClick={this.handleChange}>
                             Login
                         </button>
                     </div>

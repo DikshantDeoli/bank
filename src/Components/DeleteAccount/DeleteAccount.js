@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Home extends Component {
+export default class DeleteAccount extends Component {
     render() {
         return (
-            <div>Home</div>
+            <div>DeleteAccount</div>
         )
     }
 }

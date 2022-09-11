@@ -1,0 +1,137 @@
+.basicDetailsContainer{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #d9d9d98c;
+            border-radius: 20px;
+}
+
+.detailsList{
+list-style: none;
+margin:0px; 
+}
+.customerName{
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+}
+.customerGender{
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+}
+.dateofbirth
+{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.customerAddress{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.customerCity{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.customerState{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.customerPIN{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.customerPhone{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.customerEmailId{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.heading-newCustomerText{
+    margin: 1rem;
+}
+.detailsListInput {
+            width: 205px;
+                height: 25px;
+                background-color: #fff;
+                border-radius: 2px;
+                letter-spacing: .1rem;
+                border: none;
+                border-bottom: 0.1rem solid;
+                /* padding-left: 2rem; */
+                /* margin-bottom: 1rem; */
+}
+.detailsListInput:focus {
+        width: 205px;
+        height: 25px;
+        background-color: #ffffffcc;
+        box-shadow: 5px 5px 10px #ccc;
+        border-radius: 10px;
+        letter-spacing: .1rem;
+        border: none;
+        outline: .2rem solid rgb(148, 148, 255);
+       
+}
+
+
+.rightpart{
+    margin-left: 2px;
+}
+.leftpart{
+        /* margin-left: -5px; */
+            text-transform: capitalize;
+            width: 150px;
+            padding-right: 163px;
+}
+.selectOptions{
+            text-align: center;
+                background-color: #fff;
+                border-radius: 2px;
+                letter-spacing: .1rem;
+                border: none;
+                border-bottom: 0.1rem solid;
+                width: 205px;
+                height: 25px;
+}
+.selectOptions:focus{
+            width: 205px;
+                height: 25px;
+                background-color: #ffffffcc;
+                box-shadow: 5px 5px 10px #ccc;
+                border-radius: 10px;
+                letter-spacing: .1rem;
+                border: none;
+                outline: .2rem solid rgb(148, 148, 255);
+}
+#root>div.mainContainer>div>div.input-newCustomer>ul>li.dateofbirth>div.rightpart>div.react-datepicker-wrapper>div>input
+{
+            text-align: center;
+                background-color: #fff;
+                border-radius: 2px;
+                letter-spacing: .1rem;
+                border: none;
+                border-bottom: 0.1rem solid;
+                width: 205px;
+                height: 25px;
+}
+#root>div.mainContainer>div>div.input-newCustomer>ul>li.dateofbirth>div.rightpart>div.react-datepicker-wrapper>div>input
+:focus
+{
+        width: 205px;
+            height: 25px;
+            background-color: #ffffffcc;
+            box-shadow: 5px 5px 10px #ccc;
+            border-radius: 10px;
+            letter-spacing: .1rem;
+            border: none;
+            outline: .2rem solid rgb(148, 148, 255);
+}

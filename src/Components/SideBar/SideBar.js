@@ -16,12 +16,21 @@ import Cscs from '../../static/img/cscs.svg'
 import './SideBar.css'
 
 export default class SideBar extends Component {
+
+
+
     render() {
         return (
             <>
                 <div className='sideBar scrollbar'>
                     <div className='dashboard_homebtn'>
-                        <div className='homeBtnFrame'>
+                        <div className='homeBtnFrame'
+                            onClick={
+                                () => {
+                                    this.props.viewSetter("");
+                                }
+                            }
+                        >
                             <img src={HomeIcons} alt='HomeIcon' />
                             <div className='DashboardText'>
                                 DashBoard
@@ -30,7 +39,13 @@ export default class SideBar extends Component {
                     </div>
                     <div className='main-feature'>
                         <div className='n-cs'>
-                            <div className='frame'>
+                            <div
+                                className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("New Customer");
+                                    }
+                                }>
                                 <img src={Ncs} alt='' />
                                 <div className='frameText'>
                                     New Customer
@@ -38,7 +53,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='e-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Edit Customer");
+                                    }
+                                }
+                            >
                                 <img src={Ecs} alt='' />
                                 <div className='frameText'>
                                     Edit Customer
@@ -46,7 +67,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='d-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Delete Customer");
+                                    }
+                                }
+                            >
                                 <img src={Dcs} alt='' />
                                 <div className='frameText'>
                                     Delete Customer
@@ -54,7 +81,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='na-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("New Account");
+                                    }
+                                }
+                            >
                                 <img src={Acs} alt='' />
                                 <div className='frameText'>
                                     New Account
@@ -62,7 +95,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='ea-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Edit Account");
+                                    }
+                                }
+                            >
                                 <img src={EAcs} alt='' />
                                 <div className='frameText'>
                                     Edit Account
@@ -70,7 +109,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='da-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Delete Account");
+                                    }
+                                }
+                            >
                                 <img src={Dacs} alt='' />
                                 <div className='frameText'>
                                     Delete Account
@@ -78,7 +123,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='dp-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Deposit");
+                                    }
+                                }
+                            >
                                 <img src={Dpcs} alt='' />
                                 <div className='frameText'>
                                     Deposit
@@ -86,15 +137,27 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='w-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Withdrawal");
+                                    }
+                                }
+                            >
                                 <img src={Wcs} alt='' />
                                 <div className='frameText'>
-                                    Withdrawal
+                                    Withdraw
                                 </div>
                             </div>
                         </div>
                         <div className='ft-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Fund tranfer");
+                                    }
+                                }
+                            >
                                 <img src={Ftcs} alt='' />
                                 <div className='frameText'>
                                     Fund tranfer
@@ -102,7 +165,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='cp-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Change password");
+                                    }
+                                }
+                            >
                                 <img src={Cpcs} alt='' />
                                 <div className='frameText'>
                                     Change password
@@ -110,7 +179,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='be-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Balance Enquiry");
+                                    }
+                                }
+                            >
                                 <img src={Becs} alt='' />
                                 <div className='frameText'>
                                     Balance Enquiry
@@ -118,7 +193,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='ms-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Mini Statement");
+                                    }
+                                }
+                            >
                                 <img src={Mscs} alt='' />
                                 <div className='frameText'>
                                     Mini Statement
@@ -126,7 +207,13 @@ export default class SideBar extends Component {
                             </div>
                         </div>
                         <div className='cq-cs '>
-                            <div className='frame'>
+                            <div className='frame'
+                                onClick={
+                                    () => {
+                                        this.props.viewSetter("Customized Statement");
+                                    }
+                                }
+                            >
                                 <img src={Cscs} alt='' />
                                 <div className='frameText'>
                                     Customized Statement

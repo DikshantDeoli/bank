@@ -1,0 +1,99 @@
+.header-container-manger {
+    display: flex;
+        height: 115px;
+        flex-direction: row;
+}
+
+.logo {
+    margin-right: 230px;
+}
+
+.logo>img {
+    margin-left: 1.3rem;
+    width: 145px;
+    height: 135px;
+}
+
+.center-header-element>.header-element {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.center-header-element {
+    font-family: 'inter';
+    font-size: 1rem;
+    margin-top: 2.6rem;
+    display: flex;
+    width: 553px;
+    color: black;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    height: 30px;
+}
+
+
+#btnFeature:hover {
+    font-size: 18px;
+    box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+    transition: all 0.3s ease-out;
+}
+
+#btnAbout:hover {
+    font-size: 18px;
+
+    box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+    transition: all 0.3s ease-out;
+}
+
+#btnContact:hover {
+    font-size: 18px;
+
+    box-shadow: 4px 6px 26px -10px rgba(43, 255, 0, 0.51);
+    transition: all 0.3s ease-out;
+}
+.navbar{
+            position: absolute;
+                display: flex;
+                border-radius: 20px;
+                top: 33px;
+                left: 270px;
+                background-color: #e7e7e7;
+                height: 62px;
+                flex-direction: row;
+                width: 1079px;
+}
+.search-bar{
+                background-color: #9999995c;
+                    padding: .5rem;
+                    border-radius: 13px;
+                    position: absolute;
+                    top: 11px;
+                    left: 26px;
+                    display: flex;
+                    flex-direction: row;
+}
+.search-input {
+                
+                        width: 264px;
+                            padding: .3rem;
+                            font-size: .9rem;
+                            background-color: #99999900;
+                            outline: none;
+                            border: none;
+                            text-transform: capitalize;
+}
+.search-bar-menu{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 10px;
+            left: 941px;
+            align-content: center;
+            align-items: center;
+}
+.bell{
+    padding-left: 1rem;
+        padding-right: 1rem;
+}
